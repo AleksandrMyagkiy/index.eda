@@ -140,16 +140,19 @@ body {
     padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
+    margin: -20px;
 }
 .card {
     display: flex;
+    margin: 20px;
+    flex: 50%;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
     padding: 32px;
-    min-width: 570px;
+    max-width: 570px;
     min-height: 380px;
 }
 .card:before {
@@ -199,4 +202,226 @@ body {
     height: 100%;
     z-index: -2;
     object-fit: cover;
+}
+.section-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.delivery-week {
+    padding: 60px 0;
+}
+.delivery-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.delivery-card {
+    position: relative;
+    width: 275px;
+    height: 182px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.delivery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.delivery-tag {
+    position: absolute;
+    left: 10px;
+    top: 16px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #49494F;
+    padding: 5px 10px;
+    line-height: 23px;
+}
+.tag-junk {
+    background: #D0FD89;
+}
+.tag-vegetables {
+    background: #AEBC41;
+    color: #FFFFFF;
+}
+.tag-meat {
+    background: #B86B78;
+    color: #FFFFFF;
+}
+.tag-bird {
+    background: #D68334;
+    color: #FFFFFF;
+}
+.tag-fish {
+    background: #CD6255;
+    color: #FFFFFF;
+}
+.tag-baby {
+    background: #FFFDBF;
+}
+.tag-parents {
+    background: #F6FDC8;
+}
+.tag-festive {
+    background: #FEF7FE;
+}
+.section-grey {
+    background: #F6F6F6;
+}
+.category {
+    padding: 40px 0 60px;
+}
+.tabs {
+    display: flex;
+    margin: 0;
+    margin-bottom: 62px;
+    padding: 0;
+    list-style: none;
+}
+.tabs-link {
+    font-size: 20px;
+    line-height: 23px;
+    color: #49494F;
+    text-decoration: none;
+    margin-right: 58px;
+}
+.tabs-link.active {
+    color: #F37321;
+}
+.tabs-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.tabs-card {
+    max-width: 270px;
+    border-radius: 20px;
+    overflow: hidden;         /* все что вылезет за границу карточки, будет скрываться*/
+    background-color: #FFFFFF;
+}
+.tabs-image {
+    max-width: 100%;
+}
+.tabs-card-content {
+    padding: 21px 25px 36px;
+}
+.tabs-title {
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+.tabs-descr {
+    color: #B9B9BE;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+.tabs-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tabs-price {
+    display: block;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 23px;
+    color: #4B4B51;
+    margin-bottom: 5px;
+}
+.tabs-weight {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #AAAAB1;
+}
+.button-outline {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 15px 25px;
+    border: 2px solid #F37321;
+    box-sizing: border-box;
+    border-radius: 33px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F37321;
+}
+.button-center {
+    display: block;
+    margin: auto;
+    padding: 15px 105px;
+    background-color: #fff;
+}
+.benefits {
+    padding: 110px 0 200px;
+}
+.benefits-cards {
+    display: flex;
+    justify-content: space-between;
+}
+.benefits-card {
+    width: 270px;
+    height: 300px;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    padding: 30px 0 25px;
+    overflow: hidden; 
+    text-align: center;
+}
+.benefits-img-basket {
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 34px;
+}
+.benefits-card-title {
+    margin: 0;
+    padding: 0 55px 13px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+}
+.benefits-card-descr {
+    color: #49494F;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 24px;
+    margin:0;
+}
+.footer {
+    padding: 40px 0;
+    background: #F6F6F6;
+}
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+}
+.footer-logo {
+    margin-right: 50px;
+}
+.footer-link {
+    color: #000000;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    margin-right: 50px;
+}
+.social-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.social-link {
+    margin-left: 20px;
+    text-decoration: none;
 }
